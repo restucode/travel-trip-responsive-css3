@@ -51,19 +51,24 @@ TweenMax.to('.wrapper', 3 , {
 
 var tl = new TimelineMax();
 
-tl.from('.loader', 1.6, {
-	scaleY: '0%',
-	y: 80,
-	ease: Expo.easeInOut,
-	delay: 1,
-	transformOrigin: '50% 100%'
-})
+// tl.from('.loader', 1.6, {
+// 	scaleY: '0%',
+// 	y: 80,
+// 	ease: Expo.easeInOut,
+// 	delay: 1,
+// 	transformOrigin: '50% 100%'
+// })
 
-tl.to('.loader', 1.6, {
- height: '20vh',
- scaleY: '0%',
- ease: Expo.easeInOut,
- transformOrigin: '0% -100%'
+// tl.to('.loader', 1.6, {
+//  height: '20vh',
+//  scaleY: '0%',
+//  ease: Expo.easeInOut,
+//  transformOrigin: '0% -100%'
+// })
+
+tl.to('.loader-airplane', 3.8, {
+	top: '-10%',
+	ease: Expo.easeInOut	
 })
 
 setTimeout(() => {

@@ -48,17 +48,27 @@ body {
   top: 0;
 
 }
-
-.loader {
+/*.loader {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 8%;
   height: 20vh;
-  background: #fff;
+  z-index: 2;
+  background-image: url(../assets/airplane.svg);
+}*/
+
+.loader-airplane {
+  position: fixed;
+  top: 115%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(-45deg);
+  width: 100px;
+  height: 150px;
   z-index: 2;
 }
+/**/
 
 /*loader*/
 
