@@ -42,8 +42,8 @@ clickLink.forEach(link => {
 
 // tweeenmax
 
-TweenMax.to('.wrapper', 2 , {
-	top: '-100%',
+TweenMax.to('.wrapper', 3 , {
+	top: '-200%',
 	ease: Expo.easeInOut,
 	delay: 3.6
 })
