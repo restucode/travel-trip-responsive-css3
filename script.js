@@ -69,6 +69,7 @@ tl.to('.loader', 1.6, {
 setTimeout(() => {
 	document.body.style.overflowY = 'scroll';
 	document.body.style.overflowX = 'hidden';
+	document.querySelector('.wrapper').style.display = 'none';
 }, 7800)
 
 
