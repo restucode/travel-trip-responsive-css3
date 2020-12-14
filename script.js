@@ -42,10 +42,10 @@ clickLink.forEach(link => {
 
 // tweeenmax
 
-TweenMax.to('.wrapper', 3 , {
+TweenMax.to('.wrapper', 2 , {
 	top: '-200%',
 	ease: Expo.easeInOut,
-	delay: 3.6
+	delay: 3
 })
 
 
@@ -75,7 +75,7 @@ setTimeout(() => {
 	document.body.style.overflowY = 'scroll';
 	document.body.style.overflowX = 'hidden';
 	document.querySelector('.wrapper').style.display = 'none';
-}, 7800)
+}, 6500)
 
 
 var tl = new TweenMax.staggerFrom('.hero-left', 2 , {
