@@ -40,3 +40,48 @@ clickLink.forEach(link => {
 })
 
 
+// tweeenmax
+
+TweenMax.to('.wrapper', 2 , {
+	top: '-100%',
+	ease: Expo.easeInOut,
+	delay: 3.6
+})
+
+
+var tl = new TimelineMax();
+
+tl.from('.loader', 1.6, {
+	scaleY: '0%',
+	y: 80,
+	ease: Expo.easeInOut,
+	delay: 1,
+	transformOrigin: '50% 100%'
+})
+
+tl.to('.loader', 1.6, {
+ height: '20vh',
+ scaleY: '0%',
+ ease: Expo.easeInOut,
+ transformOrigin: '0% -100%'
+})
+
+setTimeout(() => {
+	document.body.style.overflowY = 'scroll';
+	document.body.style.overflowX = 'hidden';
+}, 7800)
+
+
+var tl = new TweenMax.staggerFrom('.hero-left', 2 , {
+	opacity: 0,
+	x:-20,
+	ease: Expo.easeInOut,
+	delay: 4.2
+})
+
+var tl = new TweenMax.staggerFrom('.hero-right', 2 , {
+	opacity: 0,
+	x:20,
+	ease: Expo.easeInOut,
+	delay: 4.2
+})
